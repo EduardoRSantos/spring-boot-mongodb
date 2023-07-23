@@ -1,5 +1,7 @@
 package com.eduardo.workshopmongo.dto;
 
+import java.io.Serializable;
+
 import com.eduardo.workshopmongo.entities.User;
 
 import lombok.Getter;
@@ -9,7 +11,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class UserDTO {
+public class UserDTO implements Serializable {
 
     private String id;
     private String name;
