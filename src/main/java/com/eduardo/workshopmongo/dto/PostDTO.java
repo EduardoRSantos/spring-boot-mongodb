@@ -1,7 +1,7 @@
 package com.eduardo.workshopmongo.dto;
 
 import java.io.Serializable;
-import java.time.Instant;
+import java.util.Date;
 
 import com.eduardo.workshopmongo.entities.Post;
 
@@ -15,7 +15,7 @@ import lombok.Setter;
 public class PostDTO implements Serializable {
 
     private String id;
-    private Instant date;
+    private Date date;
     private String title;
     private String body;
     private AuthorDTO author;

@@ -1,7 +1,7 @@
 package com.eduardo.workshopmongo.dto;
 
 import java.io.Serializable;
-import java.time.Instant;
+import java.util.Date;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,6 +15,6 @@ import lombok.Setter;
 public class CommentDTO implements Serializable {
     
     private String text;
-    private Instant datetime;
+    private Date datetime;
     private AuthorDTO author;
 }
